@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d612227-b6c5-4834-956c-3afc0f41e291" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../In-classExercise2UnderstandingObjectsinUnity/.idea/.idea.In-classExercise2UnderstandingObjectsinUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../In-classExercise2UnderstandingObjectsinUnity/.idea/.idea.In-classExercise2UnderstandingObjectsinUnity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Engine_Thrust/PlayerShip/PlayerShipLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Engine_Thrust/PlayerShip/PlayerShipLeft.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Engine_Thrust/PlayerShip/PlayerShipRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Engine_Thrust/PlayerShip/PlayerShipRight.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Player Ship.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player Ship.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipMovement.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayShipMove.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayShipMove.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipBounds.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipBounds.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player_BaseFire.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="150">
               <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <marker date="1555296576233" expanded="false" signature="6:78" ph="..." />
@@ -38,17 +35,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+            <state relative-caret-position="232">
+              <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
               <folding>
-                <marker date="1555300428850" expanded="false" signature="6:32" ph="..." />
-                <marker date="1555300428850" expanded="true" signature="77:1718" ph="{...}" />
-                <marker date="1555300428850" expanded="true" signature="214:272" ph="{...}" />
-                <marker date="1555300428850" expanded="true" signature="330:1069" ph="{...}" />
-                <marker date="1555300428850" expanded="true" signature="393:467" ph="/* THIS MOVES PLAYER ... */" />
-                <marker date="1555300428850" expanded="true" signature="751:822" ph="{...}" />
-                <marker date="1555300428850" expanded="true" signature="868:940" ph="{...}" />
-                <marker date="1555300428850" expanded="true" signature="1107:1706" ph="{...}" />
+                <marker date="1555356527105" expanded="false" signature="6:32" ph="..." />
+                <marker date="1555356527105" expanded="true" signature="77:1718" ph="{...}" />
+                <marker date="1555356527105" expanded="true" signature="214:272" ph="{...}" />
+                <marker date="1555356527105" expanded="true" signature="330:1069" ph="{...}" />
+                <marker date="1555356527105" expanded="true" signature="393:467" ph="/* THIS MOVES PLAYER ... */" />
+                <marker date="1555356527105" expanded="true" signature="751:822" ph="{...}" />
+                <marker date="1555356527105" expanded="true" signature="868:940" ph="{...}" />
+                <marker date="1555356527105" expanded="true" signature="1107:1706" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -77,11 +74,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="82" />
-    <option name="y" value="53" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="52" />
+    <option name="y" value="33" />
+    <option name="width" value="1400" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -92,12 +89,12 @@
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,11 +142,12 @@
       <updated>1555024532523</updated>
       <workItem from="1555024534610" duration="787000" />
       <workItem from="1555175017332" duration="14094000" />
+      <workItem from="1555355948157" duration="1184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14881000" />
+    <option name="totallyTimeSpent" value="16065000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -161,15 +159,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="43" width="1400" height="784" extended-state="0" />
+    <frame x="42" y="27" width="1120" height="627" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3254717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Build" visible="true" weight="0.3297546" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -186,6 +183,7 @@
       <window_info anchor="bottom" id="Unit Tests" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Build" order="16" visible="true" weight="0.3297546" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -211,51 +209,15 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayShipMove.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipRight.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipLeft.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipUp.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipBounds.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayShipMove.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayShipMove.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipRight.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipLeft.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipUp.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipBounds.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayShipMove.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player_BaseFire.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="150">
           <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding>
             <marker date="1555296576233" expanded="false" signature="6:78" ph="..." />
@@ -268,17 +230,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+        <state relative-caret-position="232">
+          <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
           <folding>
-            <marker date="1555300428850" expanded="false" signature="6:32" ph="..." />
-            <marker date="1555300428850" expanded="true" signature="77:1718" ph="{...}" />
-            <marker date="1555300428850" expanded="true" signature="214:272" ph="{...}" />
-            <marker date="1555300428850" expanded="true" signature="330:1069" ph="{...}" />
-            <marker date="1555300428850" expanded="true" signature="393:467" ph="/* THIS MOVES PLAYER ... */" />
-            <marker date="1555300428850" expanded="true" signature="751:822" ph="{...}" />
-            <marker date="1555300428850" expanded="true" signature="868:940" ph="{...}" />
-            <marker date="1555300428850" expanded="true" signature="1107:1706" ph="{...}" />
+            <marker date="1555356527105" expanded="false" signature="6:32" ph="..." />
+            <marker date="1555356527105" expanded="true" signature="77:1718" ph="{...}" />
+            <marker date="1555356527105" expanded="true" signature="214:272" ph="{...}" />
+            <marker date="1555356527105" expanded="true" signature="330:1069" ph="{...}" />
+            <marker date="1555356527105" expanded="true" signature="393:467" ph="/* THIS MOVES PLAYER ... */" />
+            <marker date="1555356527105" expanded="true" signature="751:822" ph="{...}" />
+            <marker date="1555356527105" expanded="true" signature="868:940" ph="{...}" />
+            <marker date="1555356527105" expanded="true" signature="1107:1706" ph="{...}" />
           </folding>
         </state>
       </provider>

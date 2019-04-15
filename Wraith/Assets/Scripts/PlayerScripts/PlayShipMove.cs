@@ -27,15 +27,15 @@ public class PlayShipMove : MonoBehaviour
         float x = Input.GetAxis("Horizontal") * -1 ;
         
         //Trigger animations based on input, these currently are broken?
-//        if (Input.GetKey(KeyCode.LeftArrow))
-//        {
-//            animator.SetTrigger("LeftArrowPress");
-//        }
-//        if (Input.GetKey(KeyCode.RightArrow))
-//        {
-//            animator.SetTrigger("RightArrowPress");
-//        }
-//        
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            animator.SetTrigger("LeftArrowPress");
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            animator.SetTrigger("RightArrowPress");
+        }
+        
         //Not using z axis
         Vector2 direction = new Vector2(x,y).normalized;
         Movement(direction);
