@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d612227-b6c5-4834-956c-3afc0f41e291" name="Default Changelist" comment="" />
+    <list default="true" id="9d612227-b6c5-4834-956c-3afc0f41e291" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Engine_Thrust/PlayerShip/PlayerShipLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Engine_Thrust/PlayerShip/PlayerShipLeft.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player Ship.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player Ship.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipMovement.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayShipMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayShipMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipBounds.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipBounds.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,18 +20,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayShipMove.cs">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player_BaseFire.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="180">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
-                <marker date="1555267095840" expanded="true" signature="6:32" ph="..." />
-                <marker date="1555267095840" expanded="true" signature="77:1400" ph="{...}" />
-                <marker date="1555267095840" expanded="true" signature="214:272" ph="{...}" />
-                <marker date="1555267095840" expanded="true" signature="330:751" ph="{...}" />
-                <marker date="1555267095840" expanded="true" signature="393:467" ph="/* THIS MOVES PLAYER ... */" />
-                <marker date="1555267095840" expanded="true" signature="789:1388" ph="{...}" />
+                <marker date="1555296576233" expanded="false" signature="6:78" ph="..." />
+                <marker date="1555296576233" expanded="true" signature="124:438" ph="{...}" />
+                <marker date="1555296576233" expanded="true" signature="256:436" ph="{...}" />
+                <marker date="1555296576233" expanded="true" signature="327:421" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+              <folding>
+                <marker date="1555300428850" expanded="false" signature="6:32" ph="..." />
+                <marker date="1555300428850" expanded="true" signature="77:1718" ph="{...}" />
+                <marker date="1555300428850" expanded="true" signature="214:272" ph="{...}" />
+                <marker date="1555300428850" expanded="true" signature="330:1069" ph="{...}" />
+                <marker date="1555300428850" expanded="true" signature="393:467" ph="/* THIS MOVES PLAYER ... */" />
+                <marker date="1555300428850" expanded="true" signature="751:822" ph="{...}" />
+                <marker date="1555300428850" expanded="true" signature="868:940" ph="{...}" />
+                <marker date="1555300428850" expanded="true" signature="1107:1706" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -33,8 +60,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipBounds.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayShipMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player_BaseFire.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -45,10 +72,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayShipMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayerShipBounds.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShipMovement/PlayShipMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player_BaseFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="82" />
     <option name="y" value="53" />
     <option name="width" value="1750" />
@@ -115,12 +144,12 @@
       <option name="presentableId" value="Default" />
       <updated>1555024532523</updated>
       <workItem from="1555024534610" duration="787000" />
-      <workItem from="1555175017332" duration="11165000" />
+      <workItem from="1555175017332" duration="14094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11952000" />
+    <option name="totallyTimeSpent" value="14881000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -214,13 +243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <marker date="1555265480120" expanded="true" signature="6:78" ph="..." />
-            <marker date="1555265480120" expanded="true" signature="101:146" ph="{...}" />
-            <marker date="1555265480120" expanded="true" signature="194:648" ph="{...}" />
-            <marker date="1555265480120" expanded="true" signature="294:315" ph="{...}" />
-            <marker date="1555265480120" expanded="true" signature="373:646" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -228,13 +250,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player_BaseFire.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding>
-            <marker date="1555267095840" expanded="true" signature="6:32" ph="..." />
-            <marker date="1555267095840" expanded="true" signature="77:1400" ph="{...}" />
-            <marker date="1555267095840" expanded="true" signature="214:272" ph="{...}" />
-            <marker date="1555267095840" expanded="true" signature="330:751" ph="{...}" />
-            <marker date="1555267095840" expanded="true" signature="393:467" ph="/* THIS MOVES PLAYER ... */" />
-            <marker date="1555267095840" expanded="true" signature="789:1388" ph="{...}" />
+            <marker date="1555296576233" expanded="false" signature="6:78" ph="..." />
+            <marker date="1555296576233" expanded="true" signature="124:438" ph="{...}" />
+            <marker date="1555296576233" expanded="true" signature="256:436" ph="{...}" />
+            <marker date="1555296576233" expanded="true" signature="327:421" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+          <folding>
+            <marker date="1555300428850" expanded="false" signature="6:32" ph="..." />
+            <marker date="1555300428850" expanded="true" signature="77:1718" ph="{...}" />
+            <marker date="1555300428850" expanded="true" signature="214:272" ph="{...}" />
+            <marker date="1555300428850" expanded="true" signature="330:1069" ph="{...}" />
+            <marker date="1555300428850" expanded="true" signature="393:467" ph="/* THIS MOVES PLAYER ... */" />
+            <marker date="1555300428850" expanded="true" signature="751:822" ph="{...}" />
+            <marker date="1555300428850" expanded="true" signature="868:940" ph="{...}" />
+            <marker date="1555300428850" expanded="true" signature="1107:1706" ph="{...}" />
           </folding>
         </state>
       </provider>
