@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Player_BaseFire : MonoBehaviour
 {
+    public GameObject basefirePrefab;
     public float fireDelay = 0.25f;
-    private float cooldownTimer = 0;
+    float cooldownTimer = 0;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1") && (cooldownTimer <= 0.0f))
+        cooldownTimer -= Time.deltaTime;
+        if (Input.GetButton("Fire1") && (cooldownTimer <= 0))
         {
             //Shoot the base shot
+            Debug.Log(("Pew!"));
             cooldownTimer = fireDelay;
+            
+            Instantiate(basefirePrefab, transform.position, transform.rotation);
 
         }
         

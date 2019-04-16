@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9609f1d6-9a2f-4e7e-9939-9ff7c5473e97" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.In-classExercise2UnderstandingObjectsinUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.In-classExercise2UnderstandingObjectsinUnity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wraith/.idea/.idea.Wraith/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wraith/.idea/.idea.Wraith/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Wraith/.idea/.idea.Wraith/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wraith/.idea/.idea.Wraith/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Wraith/Assets/Animations/Engine_Thrust/PlayerShip/PlayerShipLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Wraith/Assets/Animations/Engine_Thrust/PlayerShip/PlayerShipLeft.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Wraith/Assets/Animations/Engine_Thrust/PlayerShip/PlayerShipRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Wraith/Assets/Animations/Engine_Thrust/PlayerShip/PlayerShipRight.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Wraith/Assets/Animations/Player Ship.controller" beforeDir="false" afterPath="$PROJECT_DIR$/../Wraith/Assets/Animations/Player Ship.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Wraith/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Wraith/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Wraith/Assets/Scripts/PlayerScripts/PlayShipMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Wraith/Assets/Scripts/PlayerScripts/PlayShipMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wraith/Assets/Scripts/PlayerScripts/Player_BaseFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Wraith/Assets/Scripts/PlayerScripts/Player_BaseFire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wraith/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Wraith/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wraith/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Wraith/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

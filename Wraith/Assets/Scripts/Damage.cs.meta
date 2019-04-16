@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 8918f6707a4bc8748864adbcbf4d3b71
+guid: 0bb87118f59c10d408ddccfad866850a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - basefirePrefab: {fileID: 1373830132862921432, guid: e0ba850665b1ca54f9b8de17ea067c8c,
-      type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
