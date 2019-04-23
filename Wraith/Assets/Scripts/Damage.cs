@@ -13,10 +13,16 @@ public class Damage : MonoBehaviour
     private int correctLayer;
     
     //When hit do this...
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.tag == "Boundary")
+        {
+            return;
+        }
+        
         Debug.Log("Trigger!");
 
+        
         if (invisibleTime <= 0)
         {
             hitpoints--;
@@ -49,6 +55,7 @@ public class Damage : MonoBehaviour
     //Death
     void Die()
     {
+        
         Destroy(gameObject);
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayShipMove : MonoBehaviour
 {
     private Animator animator;
-    private float maxAccel = 9f;
+    public float maxAccel = 9f;
 
     // Start is called before the first frame update
     void Start()

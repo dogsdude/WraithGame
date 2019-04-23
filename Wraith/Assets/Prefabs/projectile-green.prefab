@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3547464880935291093}
   - component: {fileID: 3547464880935291092}
   - component: {fileID: 3547464880935291091}
+  - component: {fileID: 2865682176347930799}
   m_Layer: 8
   m_Name: projectile-green
   m_TagString: Untagged
@@ -96,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0038147718, y: -0.006675791}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -107,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09, y: 0.26}
+  m_Size: {x: 0.08237046, y: 0.2466484}
   m_EdgeRadius: 0
 --- !u!50 &3547464880935291093
 Rigidbody2D:
@@ -142,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3695375f0d622143aa4eca6ecf1c48e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
+  maxSpeed: 11
 --- !u!114 &3547464880935291091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,3 +158,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitpoints: 1
   invizAmount: 0
+--- !u!114 &2865682176347930799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3547464880935291090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c41267ef22f9d459a8a88371facca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 5
