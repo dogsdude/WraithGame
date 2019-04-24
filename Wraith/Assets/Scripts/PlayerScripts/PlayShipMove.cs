@@ -26,7 +26,7 @@ public class PlayShipMove : MonoBehaviour
         //Returns float from -1 to 1, + = right, - = left
         float x = Input.GetAxis("Horizontal") * -1 ;
         
-        //Trigger animations based on input, these currently are broken?
+        //Trigger animations based on input
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             animator.SetTrigger("LeftArrowPress");
