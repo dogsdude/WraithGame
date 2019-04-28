@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject baseEnemy;
+    public GameObject enemyShip;
     public Vector2 spawnValues;
 
     private void Start()
@@ -15,8 +15,17 @@ public class GameController : MonoBehaviour
     void SpawnWaves()
     {
         Vector2 spawnPosition = new Vector2(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y);
-        Quaternion spawnRotation = new Quaternion();
+        Quaternion spawnRotation = Quaternion.identity;
             
-        Instantiate(baseEnemy, spawnPosition, spawnRotation);
+        Instantiate(enemyShip, spawnPosition, spawnRotation);
+
+//        //Min value of area
+//        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+//        //Max value of area
+//        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+//        
+//        //spawn enemy
+        
+
     }
 }
