@@ -6,18 +6,29 @@ public class GameController : MonoBehaviour
 {
     public GameObject enemyShip;
     public Vector2 spawnValues;
+    public int shipCount;
+    public float spawnWait;
+    public float startWait;
 
     private void Start()
     {
-        SpawnWaves();
+        StartCoroutine(SpawnWaves());
     }
 
-    void SpawnWaves()
+    IEnumerator SpawnWaves()
     {
-        Vector2 spawnPosition = new Vector2(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y);
-        Quaternion spawnRotation = Quaternion.identity;
-            
-        Instantiate(enemyShip, spawnPosition, spawnRotation);
+        yield return new WaitForSeconds(startWait);
+        for ( int i = 0; i<shipCount; i++) 
+        {
+            Vector2 spawnPosition = new Vector2(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y);
+            Quaternion spawnRotation = Quaternion.identity;
+
+            Instantiate(enemyShip, spawnPosition, spawnRotation);
+
+            yield return new WaitForSeconds(spawnWait);
+        }
+
+
 
 //        //Min value of area
 //        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));

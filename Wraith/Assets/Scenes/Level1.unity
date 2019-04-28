@@ -747,7 +747,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyShip: {fileID: 3607939300772723258, guid: e14c98e26d044f94b8184e363ff29be6,
     type: 3}
-  spawnValues: {x: 6, y: 19}
+  spawnValues: {x: -6, y: 19}
+  shipCount: 5
+  spawnWait: 3
+  startWait: 4
 --- !u!1 &1970966570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,17 +1062,17 @@ PrefabInstance:
     - target: {fileID: 3607939300772723258, guid: e14c98e26d044f94b8184e363ff29be6,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3607939300772723257, guid: e14c98e26d044f94b8184e363ff29be6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3607939300772723257, guid: e14c98e26d044f94b8184e363ff29be6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3607939300772723257, guid: e14c98e26d044f94b8184e363ff29be6,
         type: 3}

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d612227-b6c5-4834-956c-3afc0f41e291" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Wraith/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Wraith/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy Ship.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy Ship.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy_ship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/enemy_ship.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,33 +14,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="285">
+              <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="75" />
               <folding>
-                <marker date="1556492690136" expanded="false" signature="6:78" ph="..." />
-                <marker date="1556492690136" expanded="true" signature="123:779" ph="{...}" />
-                <marker date="1556492690136" expanded="true" signature="216:250" ph="{...}" />
-                <marker date="1556492690136" expanded="true" signature="273:777" ph="{...}" />
-                <marker date="1556492690136" expanded="true" signature="280:552" ph="/* Vector2 spawnPosition = new Vector2(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y); ... */" />
+                <marker date="1556495211637" expanded="false" signature="6:78" ph="..." />
+                <marker date="1556495211637" expanded="true" signature="123:1063" ph="{...}" />
+                <marker date="1556495211637" expanded="true" signature="298:348" ph="{...}" />
+                <marker date="1556495211637" expanded="true" signature="378:1061" ph="{...}" />
+                <marker date="1556495211637" expanded="true" signature="480:793" ph="{...}" />
+                <marker date="1556495211637" expanded="true" signature="797:1045" ph="/* Min value of area ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="135">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding>
-                <marker date="1556493010390" expanded="false" signature="6:78" ph="..." />
-                <marker date="1556493010390" expanded="true" signature="122:699" ph="{...}" />
-                <marker date="1556493010390" expanded="true" signature="245:277" ph="{...}" />
-                <marker date="1556493010390" expanded="true" signature="335:697" ph="{...}" />
-                <marker date="1556493010390" expanded="true" signature="638:691" ph="{...}" />
+                <marker date="1556493185225" expanded="false" signature="6:78" ph="..." />
+                <marker date="1556493185225" expanded="true" signature="122:688" ph="{...}" />
+                <marker date="1556493185225" expanded="true" signature="245:266" ph="{...}" />
+                <marker date="1556493185225" expanded="true" signature="324:686" ph="{...}" />
+                <marker date="1556493185225" expanded="true" signature="627:680" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -82,8 +82,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
         <option value="$PROJECT_DIR$/../Week4GP/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -158,12 +158,12 @@
       <workItem from="1555175017332" duration="14094000" />
       <workItem from="1555355948157" duration="11036000" />
       <workItem from="1555942871830" duration="10642000" />
-      <workItem from="1556491831665" duration="1230000" />
+      <workItem from="1556491831665" duration="2789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37789000" />
+    <option name="totallyTimeSpent" value="39348000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,30 +351,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="135">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
-            <marker date="1556492690136" expanded="false" signature="6:78" ph="..." />
-            <marker date="1556492690136" expanded="true" signature="123:779" ph="{...}" />
-            <marker date="1556492690136" expanded="true" signature="216:250" ph="{...}" />
-            <marker date="1556492690136" expanded="true" signature="273:777" ph="{...}" />
-            <marker date="1556492690136" expanded="true" signature="280:552" ph="/* Vector2 spawnPosition = new Vector2(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y); ... */" />
+            <marker date="1556493185225" expanded="false" signature="6:78" ph="..." />
+            <marker date="1556493185225" expanded="true" signature="122:688" ph="{...}" />
+            <marker date="1556493185225" expanded="true" signature="245:266" ph="{...}" />
+            <marker date="1556493185225" expanded="true" signature="324:686" ph="{...}" />
+            <marker date="1556493185225" expanded="true" signature="627:680" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state relative-caret-position="285">
+          <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="75" />
           <folding>
-            <marker date="1556493010390" expanded="false" signature="6:78" ph="..." />
-            <marker date="1556493010390" expanded="true" signature="122:699" ph="{...}" />
-            <marker date="1556493010390" expanded="true" signature="245:277" ph="{...}" />
-            <marker date="1556493010390" expanded="true" signature="335:697" ph="{...}" />
-            <marker date="1556493010390" expanded="true" signature="638:691" ph="{...}" />
+            <marker date="1556495211637" expanded="false" signature="6:78" ph="..." />
+            <marker date="1556495211637" expanded="true" signature="123:1063" ph="{...}" />
+            <marker date="1556495211637" expanded="true" signature="298:348" ph="{...}" />
+            <marker date="1556495211637" expanded="true" signature="378:1061" ph="{...}" />
+            <marker date="1556495211637" expanded="true" signature="480:793" ph="{...}" />
+            <marker date="1556495211637" expanded="true" signature="797:1045" ph="/* Min value of area ... */" />
           </folding>
         </state>
       </provider>
