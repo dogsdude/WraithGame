@@ -4,12 +4,24 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    //The thing that will be spawned
     public GameObject enemyShip;
+    
+    //Where the thing will spawn
     public Vector2 spawnValues;
+    
+    //How many ships will spawn in the wave
     public int shipCount;
+    
+    //How long to wait in between ships
     public float spawnWait;
+    
+   //How long to wait before starting to spawn... Give player time to get ready for game to start (Maybe START! screen here)
     public float startWait;
 
+    //How long to wait in between waves of ships (THIS WILL CHANGE ONCE I HAVE MULTIPLE WAVES OF DIFFERENT THINGS!)
+    public float waveWait;
+    
     private void Start()
     {
         StartCoroutine(SpawnWaves());
@@ -18,14 +30,21 @@ public class GameController : MonoBehaviour
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
-        for ( int i = 0; i<shipCount; i++) 
+
+        while (true)
         {
-            Vector2 spawnPosition = new Vector2(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y);
-            Quaternion spawnRotation = Quaternion.identity;
+            for (int i = 0; i < shipCount; i++)
+            {
+                Vector2 spawnPosition = new Vector2(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y);
+                Quaternion spawnRotation = Quaternion.identity;
 
-            Instantiate(enemyShip, spawnPosition, spawnRotation);
+                Instantiate(enemyShip, spawnPosition, spawnRotation);
 
-            yield return new WaitForSeconds(spawnWait);
+                yield return new WaitForSeconds(spawnWait);
+            }
+
+            yield return new WaitForSeconds(waveWait);
+
         }
 
 
