@@ -6,11 +6,7 @@ public class EnemyShipMove : MonoBehaviour
 {
     //Speed of enemy ship
     public float speed; 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()

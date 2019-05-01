@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d612227-b6c5-4834-956c-3afc0f41e291" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Wraith/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Wraith/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy_ship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/enemy_ship.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Damage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestoryViaBoundary.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestoryViaBoundary.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SelfDestruct.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SelfDestruct.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Destroy/DestroyViaTime.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -56,14 +47,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="90">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding>
-                <marker date="1556493185225" expanded="false" signature="6:78" ph="..." />
-                <marker date="1556493185225" expanded="true" signature="122:688" ph="{...}" />
-                <marker date="1556493185225" expanded="true" signature="245:266" ph="{...}" />
-                <marker date="1556493185225" expanded="true" signature="324:686" ph="{...}" />
-                <marker date="1556493185225" expanded="true" signature="627:680" ph="{...}" />
+                <marker date="1556670873545" expanded="false" signature="6:78" ph="..." />
+                <marker date="1556670873545" expanded="true" signature="122:601" ph="{...}" />
+                <marker date="1556670873545" expanded="true" signature="237:599" ph="{...}" />
+                <marker date="1556670873545" expanded="true" signature="540:593" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Destroy/Damage.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1556063414672" expanded="false" signature="6:78" ph="..." />
+                <marker date="1556063414672" expanded="true" signature="115:1142" ph="{...}" />
+                <marker date="1556063414672" expanded="true" signature="445:738" ph="{...}" />
+                <marker date="1556063414672" expanded="true" signature="488:528" ph="{...}" />
+                <marker date="1556063414672" expanded="true" signature="610:732" ph="{...}" />
+                <marker date="1556063414672" expanded="true" signature="756:809" ph="{...}" />
+                <marker date="1556063414672" expanded="true" signature="845:1062" ph="{...}" />
+                <marker date="1556063414672" expanded="true" signature="924:989" ph="{...}" />
+                <marker date="1556063414672" expanded="true" signature="1017:1056" ph="{...}" />
+                <marker date="1556063414672" expanded="true" signature="1090:1140" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -79,6 +89,7 @@
     <setting file="file://$PROJECT_DIR$/../Week4GP/Assets/Scripts/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Destroy/DestroyViaTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Destroy/Damage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerShipBounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player_BaseFire.cs" root0="FORCE_HIGHLIGHTING" />
@@ -102,13 +113,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Damage.cs" />
         <option value="$PROJECT_DIR$/../Week4GP/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Destroy/DestroyViaTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1400" />
@@ -179,12 +190,12 @@
       <workItem from="1555175017332" duration="14094000" />
       <workItem from="1555355948157" duration="11036000" />
       <workItem from="1555942871830" duration="10642000" />
-      <workItem from="1556491831665" duration="4004000" />
+      <workItem from="1556491831665" duration="5199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40563000" />
+    <option name="totallyTimeSpent" value="41758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,20 +383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <marker date="1556493185225" expanded="false" signature="6:78" ph="..." />
-            <marker date="1556493185225" expanded="true" signature="122:688" ph="{...}" />
-            <marker date="1556493185225" expanded="true" signature="245:266" ph="{...}" />
-            <marker date="1556493185225" expanded="true" signature="324:686" ph="{...}" />
-            <marker date="1556493185225" expanded="true" signature="627:680" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -410,6 +407,37 @@
             <marker date="1556668866030" expanded="false" signature="6:78" ph="..." />
             <marker date="1556668866030" expanded="true" signature="123:264" ph="{...}" />
             <marker date="1556668866030" expanded="true" signature="210:261" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemyShipMove.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <marker date="1556670873545" expanded="false" signature="6:78" ph="..." />
+            <marker date="1556670873545" expanded="true" signature="122:601" ph="{...}" />
+            <marker date="1556670873545" expanded="true" signature="237:599" ph="{...}" />
+            <marker date="1556670873545" expanded="true" signature="540:593" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Destroy/Damage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1556063414672" expanded="false" signature="6:78" ph="..." />
+            <marker date="1556063414672" expanded="true" signature="115:1142" ph="{...}" />
+            <marker date="1556063414672" expanded="true" signature="445:738" ph="{...}" />
+            <marker date="1556063414672" expanded="true" signature="488:528" ph="{...}" />
+            <marker date="1556063414672" expanded="true" signature="610:732" ph="{...}" />
+            <marker date="1556063414672" expanded="true" signature="756:809" ph="{...}" />
+            <marker date="1556063414672" expanded="true" signature="845:1062" ph="{...}" />
+            <marker date="1556063414672" expanded="true" signature="924:989" ph="{...}" />
+            <marker date="1556063414672" expanded="true" signature="1017:1056" ph="{...}" />
+            <marker date="1556063414672" expanded="true" signature="1090:1140" ph="{...}" />
           </folding>
         </state>
       </provider>
