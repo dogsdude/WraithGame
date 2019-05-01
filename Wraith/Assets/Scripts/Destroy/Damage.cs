@@ -6,11 +6,17 @@ public class Damage : MonoBehaviour
 {
     //Ship health (Change to lives later?)
     public int hitpoints = 2;
+    
     //Moment of invisibility when hit
     public float invizAmount = 0;
     private float invisibleTime = 0;
-    //Keeps track of if we are invisible
+    
+    //Keeps track of if we are invisible (THIS WILL BE IMPLEMENTED IN FULL LATER)
     private int correctLayer;
+    
+    //Explosion now instantiated when something dies
+    public GameObject explode;
+    
     
     //When hit do this...
     void OnTriggerEnter2D(Collider2D other)
@@ -49,13 +55,17 @@ public class Damage : MonoBehaviour
         if (hitpoints <= 0)
         {
             Die();
+           
         }
     }
 
     //Death
     void Die()
     {
-        
+        //Instantiate(explosion, transform.position, transform.rotation);
         Destroy(gameObject);
+        
+       Instantiate(explode, transform.position, transform.rotation);
+       
     }
 }

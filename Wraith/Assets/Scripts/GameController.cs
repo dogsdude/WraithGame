@@ -22,9 +22,14 @@ public class GameController : MonoBehaviour
     //How long to wait in between waves of ships (THIS WILL CHANGE ONCE I HAVE MULTIPLE WAVES OF DIFFERENT THINGS!)
     public float waveWait;
     
+    //Background music for the game
+    public AudioSource music;
+    
     private void Start()
     {
+        
         StartCoroutine(SpawnWaves());
+        music.Play();
     }
 
     IEnumerator SpawnWaves()

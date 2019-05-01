@@ -165,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitpoints: 1
   invizAmount: 0
+  explode: {fileID: 7048572510465735473, guid: aa981e4bd833e8846a0e7ec82b598541, type: 3}
 --- !u!60 &3607939301116157320
 PolygonCollider2D:
   m_ObjectHideFlags: 0
