@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyShipMove : MonoBehaviour
 {
+    //TODO: Ships of different types should fire/stay in the screen differently
     //Speed of enemy ship
     public float speed; 
    

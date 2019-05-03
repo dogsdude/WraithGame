@@ -10,12 +10,12 @@ PrefabInstance:
     - target: {fileID: 7048572510465735473, guid: aa981e4bd833e8846a0e7ec82b598541,
         type: 3}
       propertyPath: m_Name
-      value: explosion
+      value: explosion small
       objectReference: {fileID: 0}
     - target: {fileID: 4979158345100707583, guid: aa981e4bd833e8846a0e7ec82b598541,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.46
+      value: 0.653
       objectReference: {fileID: 0}
     - target: {fileID: 4979158345100707583, guid: aa981e4bd833e8846a0e7ec82b598541,
         type: 3}
@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 4979158345100707583, guid: aa981e4bd833e8846a0e7ec82b598541,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6126064
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4979158345100707583, guid: aa981e4bd833e8846a0e7ec82b598541,
         type: 3}

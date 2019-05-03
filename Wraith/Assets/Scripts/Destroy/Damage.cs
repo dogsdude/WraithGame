@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
+    //TODO: Fix invisible settings when player is hit... Need to differentiate player explosion versus enemy?
+    //TODO: All of the layer stuff is currently broken or unused
+    //TODO: Make sure player Hitpoints is visible on screen. Currently the player dies on hit
+    
     //Ship health (Change to lives later?)
     public int hitpoints = 2;
     
@@ -16,8 +20,10 @@ public class Damage : MonoBehaviour
     
     //Explosion now instantiated when something dies
     public GameObject explode;
-    
-    
+
+    private GameController gameController;
+
+    public int scoreVal;
     //When hit do this...
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -40,6 +46,16 @@ public class Damage : MonoBehaviour
 
     void Start()
     {
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        if (gameControllerObject != null)
+        {
+            gameController = gameControllerObject.GetComponent<GameController>();
+        }
+
+        if (gameController == null)
+        {
+            Debug.Log("Can't find 'GameController' script");
+        }
         correctLayer = gameObject.layer;
     }
     
@@ -52,6 +68,7 @@ public class Damage : MonoBehaviour
         {
             gameObject.layer = correctLayer;
         }
+        
         if (hitpoints <= 0)
         {
             Die();
@@ -63,8 +80,9 @@ public class Damage : MonoBehaviour
     void Die()
     {
         //Instantiate(explosion, transform.position, transform.rotation);
-        Destroy(gameObject);
         
+       gameController.AddScore(scoreVal);
+       Destroy(gameObject); 
        Instantiate(explode, transform.position, transform.rotation);
        
     }

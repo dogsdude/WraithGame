@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -25,9 +26,15 @@ public class GameController : MonoBehaviour
     //Background music for the game
     public AudioSource music;
     
+    //Text to hold score
+    public Text scoreText;
+    private int score;
+    
+    
     private void Start()
     {
-        
+        score = 0;
+        UpdateScore();
         StartCoroutine(SpawnWaves());
         music.Play();
     }
@@ -62,5 +69,16 @@ public class GameController : MonoBehaviour
 //        //spawn enemy
         
 
+    }
+
+    void UpdateScore()
+    {
+        scoreText.text = "Score: " + score;
+    }
+
+    public void AddScore(int newScoreVal)
+    {
+        score += newScoreVal;
+        UpdateScore();
     }
 }
