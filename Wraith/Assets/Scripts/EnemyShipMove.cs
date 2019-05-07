@@ -10,6 +10,8 @@ public class EnemyShipMove : MonoBehaviour
    
 
     // Update is called once per frame
+    // This function moves the enemy ship from top to bottom of the script
+    // at set "speed"... This should be able to work for any number of things that move across the screen
     void Update()
     {
         Vector2 position = transform.position;

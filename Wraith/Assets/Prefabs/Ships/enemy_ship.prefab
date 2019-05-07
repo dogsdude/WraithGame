@@ -55,7 +55,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3607939301116157323}
   - component: {fileID: 3607939301116157322}
-  - component: {fileID: 3607939301116157321}
   - component: {fileID: 3607939301116157319}
   - component: {fileID: 3607939301116157320}
   - component: {fileID: 8304249142732561631}
@@ -116,8 +115,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1000566601
-  m_SortingLayer: 2
+  m_SortingLayerID: 2080333781
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 19d27bc9ca3b7f4489806a4be0805623, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -130,27 +129,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3607939301116157321
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3607939301116157324}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &3607939301116157319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +144,6 @@ MonoBehaviour:
   hitpoints: 1
   invizAmount: 0
   explode: {fileID: 7048572510465735473, guid: aa981e4bd833e8846a0e7ec82b598541, type: 3}
-  gameController: {fileID: 0}
   scoreVal: 10
 --- !u!60 &3607939301116157320
 PolygonCollider2D:

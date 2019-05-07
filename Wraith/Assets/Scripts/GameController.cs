@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -24,21 +25,61 @@ public class GameController : MonoBehaviour
     public float waveWait;
     
     //Background music for the game
-    public AudioSource music;
+    public AudioSource sound;
+    public AudioClip backgroundMusic;
+    public AudioClip death;
+    
     
     //Text to hold score
     public Text scoreText;
     private int score;
+
+    //Text to hold restart and gameover
+    public Text restartTxt;
+    public Text gameOverTxt;
+
+    //Bools to keep track of gameover versus restart logic
+    private bool gameOver;
+    private bool restart;
     
     
     private void Start()
     {
+        //The game is not over, and has not been restarted
+        gameOver = false;
+        restart = false;
+
+        //Empty strings at the start of the game
+        restartTxt.text = "";
+        gameOverTxt.text = "";
+        
+        //Score starts at 0 and is updated as game is played
         score = 0;
         UpdateScore();
+        
+        //This coroutine starts the waves of enemies
         StartCoroutine(SpawnWaves());
-        music.Play();
+        
+        //Plays my background music
+        //sound.PlayOneShot(death);
+        sound.PlayOneShot(backgroundMusic);
     }
 
+    private void Update()
+    {
+        //Restarts the game
+        if (restart)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene("Level1");
+            }
+        }
+    }
+    
+    //This is a coroutine that infintely spawns waves of enemies... The hope is to get different kinds of enemies
+    //to be randomly spawned in along with everything else to give everything some variety. Along with enemies that can
+    //shoot at the player and powerups.
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
@@ -57,17 +98,15 @@ public class GameController : MonoBehaviour
 
             yield return new WaitForSeconds(waveWait);
 
+            //Ends the game
+            if (gameOver)
+            {
+                restartTxt.text = "'R' to restart";
+                restart = true;
+                break;
+            }
+
         }
-
-
-
-//        //Min value of area
-//        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
-//        //Max value of area
-//        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
-//        
-//        //spawn enemy
-        
 
     }
 
@@ -81,4 +120,16 @@ public class GameController : MonoBehaviour
         score += newScoreVal;
         UpdateScore();
     }
+
+    public void GameOver()
+    {
+        gameOverTxt.text = "Game Over!";
+        gameOver = true;
+        
+        sound.Stop();
+        sound.PlayOneShot(death);
+        Debug.Log("Death played");
+    }
+
+   
 }
