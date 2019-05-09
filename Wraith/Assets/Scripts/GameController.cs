@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.XR.WSA.Input;
 
 public class GameController : MonoBehaviour
 {
@@ -62,7 +63,8 @@ public class GameController : MonoBehaviour
         
         //Plays my background music
         //sound.PlayOneShot(death);
-        sound.PlayOneShot(backgroundMusic);
+        sound.clip = backgroundMusic;
+        sound.Play();
     }
 
     private void Update()
@@ -126,9 +128,17 @@ public class GameController : MonoBehaviour
         gameOverTxt.text = "Game Over!";
         gameOver = true;
         
+        
         sound.Stop();
-        sound.PlayOneShot(death);
+        //sound.loop = false;
+        sound.clip = death;
+        Invoke("playDeath", 1.0f);
         Debug.Log("Death played");
+    }
+
+   void playDeath()
+    {
+        sound.Play();
     }
 
    
