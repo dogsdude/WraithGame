@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class BackgroundScroll : MonoBehaviour
 {
     
     public float scrollSpeed;
@@ -21,6 +21,6 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         float newPosition = Mathf.Repeat(Time.time * scrollSpeed, backgroundSize);
-        transform.position = startPos + Vector3.forward * newPosition;
+        transform.position = startPos + Vector3.up * newPosition;
     }
 }
