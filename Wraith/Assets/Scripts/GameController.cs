@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
 {
     //The thing that will be spawned
     public GameObject enemyShip;
+    public GameObject meteor;
     
     //Where the thing will spawn
     public Vector2 spawnValues;
@@ -95,10 +96,17 @@ public class GameController : MonoBehaviour
 
                 Instantiate(enemyShip, spawnPosition, spawnRotation);
 
+                if ( (i%3) == 0)
+                {
+                    Vector2 newSpawn = new Vector2(Random.Range(-spawnValues.x, spawnValues.x) - 1, spawnValues.y);
+                    Instantiate(meteor, newSpawn, spawnRotation);
+                }
+                
                 yield return new WaitForSeconds(spawnWait);
             }
 
             yield return new WaitForSeconds(waveWait);
+
 
             //Ends the game
             if (gameOver)
