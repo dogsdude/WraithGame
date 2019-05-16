@@ -38,7 +38,8 @@ public class PlayShipMove : MonoBehaviour
         
         //Not using z axis
         Vector2 direction = new Vector2(x,y).normalized;
-        Movement(direction);
+        if(direction != Vector2.zero)
+            Movement(direction);
 
     }
 

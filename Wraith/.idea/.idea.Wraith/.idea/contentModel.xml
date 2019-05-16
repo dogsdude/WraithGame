@@ -17,6 +17,7 @@
           </e>
           <e p="EnemyShipMove.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
           <e p="PlayerScripts" t="Include">
             <e p="Player_BaseFire.cs" t="Include" />
             <e p="PlayerShipBounds.cs" t="Include" />

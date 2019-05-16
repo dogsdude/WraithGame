@@ -12,8 +12,8 @@ public class Damage : MonoBehaviour
     public int hitpoints = 2;
 
     //Moment of invisibility when hit
-    public float invizAmount = 0;
-    private float invisibleTime = 0;
+    //public float invizAmount = 0;
+   // private float invisibleTime = 0;
 
     //Keeps track of if we are invisible (THIS WILL BE IMPLEMENTED IN FULL LATER)
     private int correctLayer;
@@ -39,11 +39,17 @@ public class Damage : MonoBehaviour
         //Implement hitpoints here?
         if ((other.tag == "Player") )
         {
-           
-            Debug.Log("Player death");
-            Instantiate(explode, transform.position, transform.rotation);
-            gameController.GameOver();
-            
+            //if (hitpoints == 0)
+            {
+                Debug.Log("Player death");
+                Instantiate(explode, transform.position, transform.rotation);
+                gameController.GameOver();
+            }
+            //else
+            {
+                //hitpoints = hitpoints-1;
+            }
+
             //gameController.sound.Stop();
         }
         Instantiate(explode, transform.position, transform.rotation);

@@ -157,8 +157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  invizAmount: 0
   explode: {fileID: 1166995077190530847, guid: 3b95e98f2076355468710d210716b9b2, type: 3}
+  scoreVal: 0
 --- !u!114 &2865682176347930799
 MonoBehaviour:
   m_ObjectHideFlags: 0

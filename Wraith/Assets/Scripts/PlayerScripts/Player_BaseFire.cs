@@ -22,6 +22,8 @@ public class Player_BaseFire : MonoBehaviour
             
             
              Instantiate(basefirePrefab, transform.position + bulletOff, transform.rotation);
+             
+             Debug.Log("Shoot played");
              shoot.Play();
 
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.XR.WSA.Input;
+//using UnityEngine.XR.WSA.Input;
 
 public class GameController : MonoBehaviour
 {
@@ -70,6 +70,8 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
+
+        //scoreText.text = score.ToString();
         //Restarts the game
         if (restart)
         {

@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 535862014}
   m_Layer: 8
   m_Name: vertical-thrust-left
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 653121279}
   m_Layer: 8
   m_Name: vertical-thrust-right
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -657,7 +657,7 @@ GameObject:
   - component: {fileID: 879668287}
   m_Layer: 8
   m_Name: vertical-thrust-mid
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -975,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660c0d88db82ae4488356e678e4b97c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: -2.69
+  scrollSpeed: -2
   backgroundSize: 22.25
 --- !u!1 &1883838764
 GameObject:
@@ -994,7 +994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1883838765
 Transform:
   m_ObjectHideFlags: 0
@@ -1023,6 +1023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyShip: {fileID: 3607939300772723258, guid: e14c98e26d044f94b8184e363ff29be6,
     type: 3}
+  meteor: {fileID: 8494763402788632198, guid: 06b2b429c3c84f04aa810927491645a3, type: 3}
   spawnValues: {x: -6, y: 19}
   shipCount: 6
   spawnWait: 1.5
@@ -1362,8 +1363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb87118f59c10d408ddccfad866850a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 10000
-  invizAmount: 0.5
+  hitpoints: 2
   explode: {fileID: 7048572510465735473, guid: aa981e4bd833e8846a0e7ec82b598541, type: 3}
   scoreVal: 0
 --- !u!212 &2080562689
@@ -1491,7 +1491,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 9dada548411382449988bd7eda385037, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.58
-  m_Pitch: 1
+  m_Pitch: 0
   Loop: 0
   Mute: 0
   Spatialize: 0
