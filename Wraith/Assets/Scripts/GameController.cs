@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     //The thing that will be spawned
     public GameObject enemyShip;
     public GameObject meteor;
+    public GameObject fastShip;
     
     //Where the thing will spawn
     public Vector2 spawnValues;
@@ -31,6 +32,7 @@ public class GameController : MonoBehaviour
     public AudioClip backgroundMusic;
     public AudioClip death;
     
+   
     
     //Text to hold score
     public Text scoreText;
@@ -47,6 +49,8 @@ public class GameController : MonoBehaviour
     
     private void Start()
     {
+        
+        
         //The game is not over, and has not been restarted
         gameOver = false;
         restart = false;
@@ -97,12 +101,21 @@ public class GameController : MonoBehaviour
                 Quaternion spawnRotation = Quaternion.identity;
 
                 Instantiate(enemyShip, spawnPosition, spawnRotation);
+                
+                if ((i%2) == 0)
+                {
+                    Vector2 newSpawn = new Vector2(Random.Range(-spawnValues.x, spawnValues.x) - 1, spawnValues.y);
+                    Instantiate(fastShip, newSpawn, spawnRotation);
+                }
 
+                yield return new WaitForSeconds(Random.Range(.1f, 1.0f));
+                
                 if ( (i%3) == 0)
                 {
                     Vector2 newSpawn = new Vector2(Random.Range(-spawnValues.x, spawnValues.x) - 1, spawnValues.y);
                     Instantiate(meteor, newSpawn, spawnRotation);
                 }
+                
                 
                 yield return new WaitForSeconds(spawnWait);
             }
