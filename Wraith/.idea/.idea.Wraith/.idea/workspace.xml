@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d612227-b6c5-4834-956c-3afc0f41e291" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Wraith/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Wraith/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships &amp; Enemies/enemy_ship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships &amp; Enemies/enemy_ship.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy_ship_fast.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/enemy_ship_fast.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
-    </list>
+    <list default="true" id="9d612227-b6c5-4834-956c-3afc0f41e291" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,28 +13,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            <state relative-caret-position="450">
+              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
               <folding>
-                <marker date="1558386781327" expanded="false" signature="6:135" ph="..." />
-                <marker date="1558386781327" expanded="true" signature="214:4425" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="1336:1931" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="1802:1865" ph="/* Plays my background music ... */" />
-                <marker date="1558386781327" expanded="true" signature="1958:2208" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="1974:2038" ph="/* scoreText.text = score.ToString(); ... */" />
-                <marker date="1558386781327" expanded="true" signature="2059:2202" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="2114:2192" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="2218:2487" ph="/* This is a coroutine that infintely spawns waves of enemies... The hope is to get different kinds of enemies ... */" />
-                <marker date="1558386781327" expanded="true" signature="2516:3901" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="2596:3894" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="2654:3636" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="2965:3185" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="3310:3528" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="3748:3883" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="3925:3981" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="4024:4089" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="4117:4363" ph="{...}" />
-                <marker date="1558386781327" expanded="true" signature="4384:4418" ph="{...}" />
+                <marker date="1558387491342" expanded="false" signature="6:135" ph="..." />
+                <marker date="1558387491342" expanded="true" signature="214:4438" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="1340:1944" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="1815:1878" ph="/* Plays my background music ... */" />
+                <marker date="1558387491342" expanded="true" signature="1971:2221" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="1987:2051" ph="/* scoreText.text = score.ToString(); ... */" />
+                <marker date="1558387491342" expanded="true" signature="2072:2215" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="2127:2205" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="2231:2500" ph="/* This is a coroutine that infintely spawns waves of enemies... The hope is to get different kinds of enemies ... */" />
+                <marker date="1558387491342" expanded="true" signature="2529:3914" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="2609:3907" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="2667:3649" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="2978:3198" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="3323:3541" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="3761:3896" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="3938:3994" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="4037:4102" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="4130:4376" ph="{...}" />
+                <marker date="1558387491342" expanded="true" signature="4397:4431" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -156,8 +147,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+            <state relative-caret-position="465">
+              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding>
                 <marker date="1558387350258" expanded="false" signature="6:113" ph="..." />
                 <marker date="1558387350258" expanded="true" signature="151:1347" ph="{...}" />
@@ -218,8 +209,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Destroy/Damage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayShipMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player_BaseFire.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -286,12 +277,12 @@
       <workItem from="1555942871830" duration="10642000" />
       <workItem from="1556491831665" duration="14221000" />
       <workItem from="1557166932519" duration="17022000" />
-      <workItem from="1558377266220" duration="6335000" />
+      <workItem from="1558377266220" duration="7068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74137000" />
+    <option name="totallyTimeSpent" value="74870000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,7 +295,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.0852349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -498,34 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding>
-            <marker date="1558386781327" expanded="false" signature="6:135" ph="..." />
-            <marker date="1558386781327" expanded="true" signature="214:4425" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="1336:1931" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="1802:1865" ph="/* Plays my background music ... */" />
-            <marker date="1558386781327" expanded="true" signature="1958:2208" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="1974:2038" ph="/* scoreText.text = score.ToString(); ... */" />
-            <marker date="1558386781327" expanded="true" signature="2059:2202" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="2114:2192" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="2218:2487" ph="/* This is a coroutine that infintely spawns waves of enemies... The hope is to get different kinds of enemies ... */" />
-            <marker date="1558386781327" expanded="true" signature="2516:3901" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="2596:3894" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="2654:3636" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="2965:3185" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="3310:3528" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="3748:3883" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="3925:3981" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="4024:4089" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="4117:4363" ph="{...}" />
-            <marker date="1558386781327" expanded="true" signature="4384:4418" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/BackgroundScroll.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -560,10 +522,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+          <folding>
+            <marker date="1558387491342" expanded="false" signature="6:135" ph="..." />
+            <marker date="1558387491342" expanded="true" signature="214:4438" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="1340:1944" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="1815:1878" ph="/* Plays my background music ... */" />
+            <marker date="1558387491342" expanded="true" signature="1971:2221" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="1987:2051" ph="/* scoreText.text = score.ToString(); ... */" />
+            <marker date="1558387491342" expanded="true" signature="2072:2215" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="2127:2205" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="2231:2500" ph="/* This is a coroutine that infintely spawns waves of enemies... The hope is to get different kinds of enemies ... */" />
+            <marker date="1558387491342" expanded="true" signature="2529:3914" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="2609:3907" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="2667:3649" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="2978:3198" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="3323:3541" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="3761:3896" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="3938:3994" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="4037:4102" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="4130:4376" ph="{...}" />
+            <marker date="1558387491342" expanded="true" signature="4397:4431" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        <state relative-caret-position="465">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding>
             <marker date="1558387350258" expanded="false" signature="6:113" ph="..." />
             <marker date="1558387350258" expanded="true" signature="151:1347" ph="{...}" />
