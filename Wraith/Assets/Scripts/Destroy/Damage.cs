@@ -29,35 +29,38 @@ public class Damage : MonoBehaviour
     //When hit do this...
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Boundary")
+        if (!other.CompareTag("PowerUp"))
         {
-            return;
-        }
-
-        Debug.Log("Trigger!");
-
-        //Implement hitpoints here?
-        if ((other.tag == "Player") )
-        {
-            //if (hitpoints == 0)
+            if (other.CompareTag("Boundary"))
             {
-                Debug.Log("Player death");
-                Instantiate(explode, transform.position, transform.rotation);
-                gameController.GameOver();
-            }
-            //else
-            {
-                //hitpoints = hitpoints-1;
+                return;
             }
 
-            //gameController.sound.Stop();
-        }
-        Instantiate(explode, transform.position, transform.rotation);
-        Debug.Log("Non-player explosion");
+            Debug.Log("Trigger!");
 
-        gameController.AddScore(scoreVal);
-        Destroy(other.gameObject);
-        Destroy(gameObject);
+            //Implement hitpoints here?
+            if (other.CompareTag("Player"))
+            {
+                //if (hitpoints == 0)
+                {
+                    Debug.Log("Player death");
+                    Instantiate(explode, transform.position, transform.rotation);
+                    gameController.GameOver();
+                }
+                //else
+                {
+                    //hitpoints = hitpoints-1;
+                }
+
+                //gameController.sound.Stop();
+            }
+
+            Instantiate(explode, transform.position, transform.rotation);
+            Debug.Log("Non-player explosion");
+
+            gameController.AddScore(scoreVal);
+            Destroy(other.gameObject);
+            Destroy(gameObject);
 
 //        if (invisibleTime <= 0)
 //        {
@@ -65,6 +68,7 @@ public class Damage : MonoBehaviour
 //            invisibleTime = invizAmount;
 //            gameObject.layer = 10;
 //        }
+        }
     }
 
     void Start()
