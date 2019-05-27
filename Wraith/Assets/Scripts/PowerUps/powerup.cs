@@ -7,13 +7,13 @@ public class powerup : MonoBehaviour
 {
    public AudioSource powerMe;
    public AudioClip gotcha;
-   
+   public GameObject speed;
    private void OnTriggerEnter2D(Collider2D other)
    {
       if (other.CompareTag("Player"))
       {
+         Debug.Log("PICKED UP!");
          PickUp();
-
       }
    }
 
@@ -21,15 +21,23 @@ public class powerup : MonoBehaviour
    {
       powerMe.clip = gotcha;
       powerMe.Play();
+      
+      
       //Instantiate()
       Debug.Log("PowerUp!");
-      
+      PlayShipMove.maxAccel = 20f;
       StartCoroutine(waitTilDeath());
    }
 
    IEnumerator waitTilDeath()
    {
-      yield return new WaitForSeconds(0.64f);
+      
+      speed.GetComponent<PolygonCollider2D>().enabled = false;
+      speed.GetComponent<SpriteRenderer>().enabled = false;
+  
+      yield return new WaitForSeconds(3f);
+      PlayShipMove.maxAccel = 9f;
       Destroy(gameObject);
+    
    }
 }

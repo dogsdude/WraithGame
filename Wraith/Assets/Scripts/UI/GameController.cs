@@ -91,6 +91,8 @@ public class GameController : MonoBehaviour
     //shoot at the player and powerups.
     IEnumerator SpawnWaves()
     {
+       
+        
         yield return new WaitForSeconds(startWait);
 
         while (true)
@@ -120,7 +122,7 @@ public class GameController : MonoBehaviour
                 yield return new WaitForSeconds(spawnWait);
             }
 
-            yield return new WaitForSeconds(waveWait);
+            //yield return new WaitForSeconds(waveWait);
 
 
             //Ends the game
@@ -130,7 +132,8 @@ public class GameController : MonoBehaviour
                 restart = true;
                 break;
             }
-
+            
+            yield return new WaitForSeconds(waveWait);
         }
 
     }
