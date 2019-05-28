@@ -25,7 +25,7 @@ public class powerup : MonoBehaviour
       
       //Instantiate()
       Debug.Log("PowerUp!");
-      PlayShipMove.maxAccel = 20f;
+      PlayShipMove.maxAccel = 15f;
       StartCoroutine(waitTilDeath());
    }
 
@@ -35,7 +35,7 @@ public class powerup : MonoBehaviour
       speed.GetComponent<PolygonCollider2D>().enabled = false;
       speed.GetComponent<SpriteRenderer>().enabled = false;
   
-      yield return new WaitForSeconds(3f);
+      yield return new WaitForSeconds(10f);
       PlayShipMove.maxAccel = 9f;
       Destroy(gameObject);
     

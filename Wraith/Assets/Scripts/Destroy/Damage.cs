@@ -25,6 +25,12 @@ public class Damage : MonoBehaviour
 
     public int scoreVal;
 
+//    public GameObject [] powerUps = new GameObject[5];
+    public GameObject speedUp;
+//    public GameObject machineGunFire;
+//    public GameObject healthUp;
+//    public GameObject invincibility;
+    
    
     //When hit do this...
     void OnTriggerEnter2D(Collider2D other)
@@ -53,6 +59,15 @@ public class Damage : MonoBehaviour
                 }
 
                 //gameController.sound.Stop();
+            }
+
+            if (other.CompareTag("Meteor"))
+            {
+                Debug.Log("METEOR DESTROYED!");
+                
+                //After other powerups are enabled this will randomly drop one from the array of powerups
+                //powerUps[0] = speedUp;
+                Instantiate(speedUp, transform.position,transform.rotation);
             }
 
             Instantiate(explode, transform.position, transform.rotation);
