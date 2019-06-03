@@ -31,13 +31,16 @@ public class GameController : MonoBehaviour
     public AudioSource sound;
     public AudioClip backgroundMusic;
     public AudioClip death;
-    
-   
-    
+     
     //Text to hold score
     public Text scoreText;
     private int score;
 
+    //Text to hold high score
+    public Text highScoreTxt;
+    public int highScore;
+    public Text high;
+    
     //Text to hold restart and gameover
     public Text restartTxt;
     public Text gameOverTxt;
@@ -50,7 +53,6 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         
-        
         //The game is not over, and has not been restarted
         gameOver = false;
         restart = false;
@@ -58,10 +60,19 @@ public class GameController : MonoBehaviour
         //Empty strings at the start of the game
         restartTxt.text = "";
         gameOverTxt.text = "";
+        high.text = "High Score: ";
         
+        //This sets the highscore to what it always has been
+        highScore = PlayerPrefs.GetInt("HighScore", 0);
+        highScoreTxt.text = highScore.ToString();
+        //highScoreTxt.text = highScore.ToString();
+            
         //Score starts at 0 and is updated as game is played
         score = 0;
         UpdateScore();
+
+        
+        
         
         //This coroutine starts the waves of enemies
         StartCoroutine(SpawnWaves());
@@ -86,13 +97,11 @@ public class GameController : MonoBehaviour
         }
     }
     
-    //This is a coroutine that infintely spawns waves of enemies... The hope is to get different kinds of enemies
+    //This is a coroutine that infinitely spawns waves of enemies... The hope is to get different kinds of enemies
     //to be randomly spawned in along with everything else to give everything some variety. Along with enemies that can
     //shoot at the player and powerups.
     IEnumerator SpawnWaves()
-    {
-       
-        
+    { 
         yield return new WaitForSeconds(startWait);
 
         while (true)
@@ -140,7 +149,17 @@ public class GameController : MonoBehaviour
 
     void UpdateScore()
     {
+        //highScore = PlayerPrefs.GetInt("HighScore", 0);
+        
         scoreText.text = "Score: " + score;
+        //highScoreTxt.text = "High Score: " + PlayerPrefs.GetInt("HighScore", 0).ToString();
+        
+        if (score > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            //highScoreTxt.text = "High score: " + score;
+            PlayerPrefs.SetInt("HighScore", score);
+            //highScoreTxt.text = "High score: " + score;
+        }
     }
 
     public void AddScore(int newScoreVal)

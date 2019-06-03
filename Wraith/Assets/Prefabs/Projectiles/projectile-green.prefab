@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb87118f59c10d408ddccfad866850a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
+  hitpoints: 0
   explode: {fileID: 1166995077190530847, guid: 3b95e98f2076355468710d210716b9b2, type: 3}
   scoreVal: 0
   speedUp: {fileID: 3341286210743570323, guid: 77ab3c3ff3542e446a5917d2d8c76a53, type: 3}

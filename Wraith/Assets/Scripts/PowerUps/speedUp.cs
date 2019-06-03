@@ -19,12 +19,12 @@ public class speedUp : MonoBehaviour
         powerMe.clip = gotcha;
         powerMe.Play();
 
-        PlayShipMove.maxAccel = 20f;
+        PlayShipMove.maxAccel = 16f;
         //Instantiate()
         Debug.Log("PowerUp!");
       
         StartCoroutine(waitTilDeath());
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         PlayShipMove.maxAccel = 9f;
     }
 

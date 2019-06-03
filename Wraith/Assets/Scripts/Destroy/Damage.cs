@@ -9,7 +9,7 @@ public class Damage : MonoBehaviour
     //TODO: Make sure player Hitpoints is visible on screen. Currently the player dies on hit
 
     //Ship health (Change to lives later?)
-    public int hitpoints = 2;
+    public int hitpoints;
 
     //Moment of invisibility when hit
     //public float invizAmount = 0;
@@ -35,6 +35,7 @@ public class Damage : MonoBehaviour
     //When hit do this...
     void OnTriggerEnter2D(Collider2D other)
     {
+        
         if (!other.CompareTag("PowerUp"))
         {
             if (other.CompareTag("Boundary"))
@@ -47,18 +48,15 @@ public class Damage : MonoBehaviour
             //Implement hitpoints here?
             if (other.CompareTag("Player"))
             {
-                //if (hitpoints == 0)
+                
                 {
                     Debug.Log("Player death");
                     Instantiate(explode, transform.position, transform.rotation);
                     gameController.GameOver();
                 }
-                //else
-                {
-                    //hitpoints = hitpoints-1;
-                }
-
-                //gameController.sound.Stop();
+                
+                    return;
+                
             }
 
             if (other.CompareTag("Meteor"))
@@ -70,12 +68,16 @@ public class Damage : MonoBehaviour
                 Instantiate(speedUp, transform.position,transform.rotation);
             }
 
-            Instantiate(explode, transform.position, transform.rotation);
-            Debug.Log("Non-player explosion");
+            else
+            {
 
-            gameController.AddScore(scoreVal);
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+                Instantiate(explode, transform.position, transform.rotation);
+                Debug.Log("Non-player explosion");
+
+                gameController.AddScore(scoreVal);
+                Destroy(other.gameObject);
+                Destroy(gameObject);
+            }
 
 //        if (invisibleTime <= 0)
 //        {

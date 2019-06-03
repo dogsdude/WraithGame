@@ -45,7 +45,7 @@ public class Player_BaseFire : MonoBehaviour
        
             //cooldownTimer -= Time.deltaTime;
             cooldownTimer -= Time.deltaTime;
-                if (Input.GetButton("Fire1") && (cooldownTimer <= 0) && (counter < 5) )
+                if (Input.GetButton("Fire1") && (cooldownTimer <= 0) && (counter < 4) )
                 {
 
                     cooldownTimer = fireDelay;
@@ -57,13 +57,13 @@ public class Player_BaseFire : MonoBehaviour
 
                 }
 
-                if (counter == 4)
+                if (counter == 3)
                 {
                     canFire = false;
 
                     Debug.Log("Loop broken");
 
-                    yield return new WaitForSeconds(0.5f);
+                    yield return new WaitForSeconds(1f);
 
                     canFire = true;
                     counter = 0;

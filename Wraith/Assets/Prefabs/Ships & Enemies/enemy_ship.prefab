@@ -141,19 +141,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb87118f59c10d408ddccfad866850a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
+  hitpoints: 4
   explode: {fileID: 7048572510465735473, guid: aa981e4bd833e8846a0e7ec82b598541, type: 3}
   scoreVal: 10
-  powerUps:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   speedUp: {fileID: 3341286210743570323, guid: 77ab3c3ff3542e446a5917d2d8c76a53, type: 3}
-  machineGunFire: {fileID: 0}
-  healthUp: {fileID: 0}
-  invincibility: {fileID: 0}
 --- !u!60 &3607939301116157320
 PolygonCollider2D:
   m_ObjectHideFlags: 0
