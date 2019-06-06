@@ -9,8 +9,10 @@ public class MainMenu : MonoBehaviour
     public AudioClip optionSound;
     public AudioSource TitleSound;
     public string newGameScene;
-    // Start is called before the first frame update
 
+    public string creditsScene;
+    // Start is called before the first frame update
+    public GameObject GameMenu;
     public Animator animator;
    //plays title music
     void Start()
@@ -24,14 +26,9 @@ public class MainMenu : MonoBehaviour
         animator.SetTrigger("FadeOut");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void StartGame()
     {
+        
         //Fade in
         FadeToLevel();
         
@@ -57,10 +54,12 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void Options()
+    public void Credits()
     {
         TitleSound.clip = optionSound;
         TitleSound.Play();
-       
+
+        SceneManager.LoadScene(creditsScene);
+
     }
 }

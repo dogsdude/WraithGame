@@ -232,6 +232,9 @@ MonoBehaviour:
   backgroundMusic: {fileID: 0}
   death: {fileID: 0}
   scoreText: {fileID: 0}
+  highScoreTxt: {fileID: 0}
+  highScore: 0
+  high: {fileID: 0}
   restartTxt: {fileID: 0}
   gameOverTxt: {fileID: 0}
 --- !u!1 &311230749
@@ -337,7 +340,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 7.48924, y: 8.382843, z: 8.501989}
-  m_Children: []
+  m_Children:
+  - {fileID: 1169537601}
   m_Father: {fileID: 1823311162}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -631,7 +635,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.020870427, g: 0.12075731, b: 0.6320754, a: 1}
+    m_NormalColor: {r: 1, g: 0.5058824, b: 0, a: 1}
     m_HighlightedColor: {r: 0.03137255, g: 0.5686275, b: 0.9450981, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -788,6 +792,92 @@ PrefabInstance:
     - {fileID: 3607939301116157319, guid: e14c98e26d044f94b8184e363ff29be6, type: 3}
     - {fileID: 831223291984673061, guid: e14c98e26d044f94b8184e363ff29be6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e14c98e26d044f94b8184e363ff29be6, type: 3}
+--- !u!1 &1169537600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1169537601}
+  - component: {fileID: 1169537603}
+  - component: {fileID: 1169537602}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1169537601
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169537600}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1335249, y: 0.11929127, z: 0.11761952}
+  m_Children: []
+  m_Father: {fileID: 359605847}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.80114937, y: -75.988556}
+  m_SizeDelta: {x: 266.2, y: 118.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1169537602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169537600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.5058824, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 0bb15920818ebc3498bf4f029130087d, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Arrow Keys -Move
+
+    Space - Fire
+
+    Esc - Pause
+
+
+    Enjoy the game!!'
+--- !u!222 &1169537603
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169537600}
+  m_CullTransparentMesh: 0
 --- !u!1 &1311027934
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,7 +970,7 @@ GameObject:
   - component: {fileID: 1373944945}
   - component: {fileID: 1373944944}
   m_Layer: 5
-  m_Name: OptionsButton
+  m_Name: CreditsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -926,7 +1016,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.019607844, g: 0.11764707, b: 0.60784316, a: 1}
+    m_NormalColor: {r: 0.9607844, g: 0.48627454, b: 0, a: 1}
     m_HighlightedColor: {r: 0.6666667, g: 0.87843144, b: 0.9294118, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -947,7 +1037,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1823311164}
-        m_MethodName: Options
+        m_MethodName: Credits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1055,7 +1145,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.019607844, g: 0.11764707, b: 0.60784316, a: 1}
+    m_NormalColor: {r: 0.9215687, g: 0.4666667, b: 0, a: 1}
     m_HighlightedColor: {r: 0.17254902, g: 0.6509804, b: 0.9607844, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1344,6 +1434,8 @@ MonoBehaviour:
   optionSound: {fileID: 8300000, guid: 498e08cf462221044ba13c32209375ac, type: 3}
   TitleSound: {fileID: 1823311163}
   newGameScene: Level1
+  creditsScene: Credits
+  GameMenu: {fileID: 1823311158}
   animator: {fileID: 1823311165}
 --- !u!95 &1823311165
 Animator:
@@ -1539,7 +1631,7 @@ GameObject:
   - component: {fileID: 1948940774}
   - component: {fileID: 1948940773}
   m_Layer: 5
-  m_Name: Options
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1597,7 +1689,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Options
+  m_Text: 'Credits
+
+'
 --- !u!222 &1948940774
 CanvasRenderer:
   m_ObjectHideFlags: 0

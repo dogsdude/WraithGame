@@ -55,7 +55,7 @@ public class Damage : MonoBehaviour
                     gameController.GameOver();
                 }
                 
-                    return;
+                    //return;
                 
             }
 
